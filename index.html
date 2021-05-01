@@ -21,22 +21,78 @@
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=649ea26c7b83553fec7d614dacee464a99e9ba11">
+    <style type="text/css">
+      body{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url('imgs/vapo-header.png');
+      }
+      * {
+          box-sizing: border-box;
+        }
+        .column {
+          float: left;
+          width: 45%;
+          padding: 10px;
+          height: 300px;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        #vapo{
+          width: 500px;
+          height: 500px;
+        }
+        #heading{
+          font-family: 'Trattatello', fantasy;
+          font-size: 50px;
+          margin: 10px; 
+        }
+        h2{
+          font-family: 'Apple Chancery', cursive;
+          font-size: 30px;
+          font-weight: bolder;
+        }
+        h3{
+          font-family: 'Apple Chancery', cursive;
+          font-size: 30px;
+          font-weight: bolder;
+          margin: 5px;
+        }
+        .normal_text{
+          font-family: Comic Sans MS, cursive;
+          font-size: 20px;
+          margin: 5px;
+        }
+
+    </style>
   </head>
   <body>
+  <!-- <body background='imgs/vapo-header.png'> -->
     <div class="container-lg px-3 my-5 markdown-body">
-      
-
-      <h1 id="vapo-developersgithubio">Welcome to vapo-developers</h1>
-
-
-      
+      <p id="heading">Welcome to VAPO</p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-
-    <p>
-      Checkout our Sudoku game on Google Play Store. 
-    </p>
+    <div class="row">
+      <div class="column">
+        <h2><u>Games on Google Play Store:</u></h2>
+        <ol class='normal_text'>
+          <li>Sudoku - Sudoku puzzle, Sudoku Solver <a href="https://play.google.com/store/apps/details?id=com.VarunPoddar.Sudoku" target="_blank">(link)</a></li>
+          <li>Coming soon...</li>
+        </ol>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3><u>Contact:</u></h3> <p class='normal_text'>vapo.developers@gmail.com</p>
+      </div>
+      <div class="column">
+        <center>
+          <img id='vapo' src="imgs/vapo.png">
+        </center>
+      </div>
+    </div>
     
   </body>
 </html>
